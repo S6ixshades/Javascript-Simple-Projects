@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Frontend </title>
+    <style> </style>
+</head>
+<body id="fist">
+    <p id="parag">
+       Just Move
+    </p> 
+    <button type="button" onclick="document.getElementById('parag').innerHTML='Hello'">click</button>
+    <!--<button type="button" onclick="document.getElementById('fist').style.backgroundColor='yellow'">clickme</button>-->
+    <p id="rest">
+        5 + 4 =
+    </p>
+    <button onclick="add()">answer</button><br><br><br>
+    <button type="button" onclick="king()">Change</button>
+    <button type="button" onclick="myAdd(10)">Let See</button>
+    <button onclick="this.style.color='red'">Turn</button>
+    <p id="car1">
+    </p>
+    <p id="yellow"></p>
+    <p id="boy"></p><br><br>
+    <p id="change" >We Are Doing Magic!!!</p>
+    <button onclick="myFunction()">ABRACADABRA</button>
+    <button onclick="myLover()">abracadabra</button><br><br><br><br><br><br>
+
+
+    <input type="text" id="sliceass">
+    <button onclick="felaKuti()">Slice</button>
+    <p id="goal"></p>
+    <p class="greem">Love is bkanh</p>
+    <p class="greem">king Kong</p>
+    <p class="greem">Sleep</p>
+    <p  class="greem">godzilla</p>
+    <p  class="greem">tabs</p><br><br><br><br><br><br>
+
+    <input type="text" id="holy">
+    <button onclick="myMafia()">Enter</button>
+    <p id="proof"></p><br><br><br><br>
+
+    <input type="" id="banton">
+    <button onclick="rapGame()">Hittas</button>
+    <p id="wayne"></p><br><br><br>
+
+    <input type="text" id="resistant">
+    <button onclick="myAngela()">Fuzhi</button>
+    <input type="text" id="feed">
+    <button onclick="bigSean()">Zhantie</button><br><br><br><br>
+
+    <input type="text" id="burn">
+    <button onclick="letBurn()">Fuzhi</button>
+    <input type="text" id="beam">
+    <button onclick="lostKings()">Zhantie</button>
+    
+
+
+
+
+
+    <script>
+        var gradulations= document.getElementById("burn");
+        var jigga;
+        function letBurn(){
+            jigga = gradulations.value;
+        }
+        function lostKings(){
+            document.getElementById("beam").value=jigga;
+        }
+
+        var prof = [];
+         function myMafia(){
+             var flow = document.getElementById("holy").value;
+             prof.push(flow);
+             document.getElementById("proof").innerHTML = prof;
+         }
+     var result;
+        function myAngela(){
+            result = document.getElementById("resistant").value;
+        }
+        function bigSean(){
+            document.getElementById("feed").value = result;
+        }
+        function rapGame(){
+            var list = `<h2>Animals</h2><ol>`
+            var bad = document.getElementById("banton").value;
+            prof.push(bad);
+                for(flowers of prof){
+                    list += `<li> ${flowers}</li>`
+                }
+                list += `</ol>`
+                document.getElementById("wayne").innerHTML=list;
+        }
+
+
+
+        
+            var kanji = document.getElementsByClassName('greem')
+            for (var i = 0; i < kanji.length; i++){
+            kanji[i].style.color = "red";
+        }
+        function felaKuti(){
+            var text = document.getElementById("sliceass").value;
+            var sent = text.split(" ");
+            document.getElementById("goal").innerHTML= sent[0].charAt(0).toUpperCase() + sent[0].slice(1).toLowerCase() +
+             " " + sent[1].charAt(0).toUpperCase() + sent[1].slice(1).toLowerCase();
+        }
+
+        function myFunction() {
+  var text = document.getElementById("change").innerHTML;
+  document.getElementById("change").innerHTML = text.toUpperCase();
+}
+
+    function myLover() {
+  var text = document.getElementById("change").innerHTML;
+  document.getElementById("change").innerHTML = text.toLowerCase();
+}
+
+
+        function add(){
+        var x = 5;
+        var y = 4;
+        var z = x + y;
+        document.getElementById("rest").innerHTML= z;
+    }
+  
+        function king(){
+            document.body.style.backgroundColor ="red";
+            document.body.style.color="green";
+            document.body.style.fontSize="20px";
+
+        }
+   
+        var car={model:"Chevolet", date:2022, color:"Black"}
+        document.getElementById("car1").innerHTML="The model of my car is "+ car.model + " and it was manufactured "+ car.date;
+
+        var x= myAdd(10);
+        document.getElementById("yellow").innerHTML = x;
+        function myAdd(a){
+            return a*a*2;
+        }
+    var person = {
+  firstName: "Ade",
+  lastName : "Moyo",
+  age       : 24,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+  document.getElementById("boy").innerHTML=person.fullName()
+;
+    </script>
+</body>
+</html>
